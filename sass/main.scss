@@ -1,0 +1,129 @@
+﻿@import "compass";
+@import "compass/reset";
+@import "partials/blankwork";
+@import "partials/outline";
+
+
+body{
+	background: url(../images/heading_bg.jpg) #060104 center top no-repeat;
+	color: #f3f2f2;
+	font-family: Arial,"微軟正黑體", "新細明體", "Lucida Sans Unicode", Helvetica, Verdana, sans-serif;
+}
+.wrapper{
+	@include wrapper;
+}
+
+header{
+	@include container;
+	a{
+		img{
+			margin-top: 31px;
+		}
+		h1{
+
+			@include hide-text;
+		}
+	}
+
+	.download{
+		position: absolute;
+		right: 247px;
+		top:347px;
+	}
+	nav{
+		@include container;
+		height: 62px;
+		background: url(../images/nav_bg.jpg) center top no-repeat;
+		margin-top: 215px;
+		ul{
+			li{
+				list-style-type: none;
+				width: get_width($_columns / 4, false) ;
+				float: left;
+				&.first{@include alpha};
+				&.last{@include omega};
+				height: 62px;
+				&:hover{
+				}
+				a{
+					display: block;
+					@include hide-text;
+				}
+			}
+		}
+	}
+}
+
+.contant{
+	@include container;
+	background-color: #151515;
+	section{
+		margin: 20px 0px;
+	}
+	h1{
+		background: url(../images/h1_bg.jpg) center top no-repeat;
+	 	width: 306px;
+	 	height: 114px;
+	 	font-size: 25px;
+	 	font-weight: bold;
+	 	text-align: center;
+	 	line-height:110px; 
+	 }
+	 p{
+	 	width: get_width(10);
+	 	padding: 20px 90px;
+	 	font-size: 18px;
+	 	line-height: 35px;
+	 }
+}
+#play_game_cont{
+	img{
+		@include column(4)
+	}
+}
+footer{
+	@include container;
+	text-align: center;
+	padding: 30px 0px;
+}
+.display_actor{
+	width: get_width(8);
+	margin: 0px auto;
+		.large_photo{
+			width: 154px;
+			height: 267px;
+			float: left;
+			background: url(../images/richer/richer0001.png);
+		}
+		.detail{
+			margin: 100px 30px 0px 200px;
+			dl{
+				float: left;
+				dt{
+					font-size: 30px;
+					line-height: 35px;
+					margin: 10px 0px;
+				}
+				dd{
+					font-size: 18px;
+					line-height:30px;
+				}
+			}
+			@include clearfix;
+		}
+		.actors{
+			@include column(7);
+			margin: 0px auto;
+			img{
+				@include column(2)
+			}
+		}
+		@include clearfix;
+}
+
+
+#news:hover{background: url(../images/news.jpg) center top no-repeat;}
+#feature:hover{background: url(../images/feture.jpg) center top no-repeat;}
+#character:hover{background: url(../images/character.jpg) center top no-repeat;}
+#play_game:hover{background: url(../images/play_game.jpg) center top no-repeat;}
+
