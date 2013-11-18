@@ -188,18 +188,6 @@ header nav ul li a {
   margin: 0px auto;
   *zoom: 1;
 }
-.display_actor .large_photo {
-  width: 154px;
-  height: 267px;
-  float: left;
-  background: url(../images/richer/richer0001.png) top center no-repeat;
-}
-.display_actor .gang {
-  background-image: url(../images/gang/gang0001.png);
-}
-.display_actor .whore {
-  background-image: url(../images/whore/whore0001.png);
-}
 .display_actor .detail {
   margin: 110px 30px 30px 193px;
   *zoom: 1;
@@ -276,4 +264,22 @@ footer {
 
 #play_game:hover {
   background: url(../images/play_game.jpg) center top no-repeat;
+}
+
+#large_photo {
+  width: 154px;
+  height: 267px;
+  float: left;
+}
+
+.act_gang {
+  background: url(../images/gang/gang0001.png) top center no-repeat;
+}
+
+.act_whore {
+  background: url(../images/whore/whore0001.png) top center no-repeat;
+}
+
+.act_richer {
+  background: url(../images/richer/richer0001.png) top center no-repeat;
 }

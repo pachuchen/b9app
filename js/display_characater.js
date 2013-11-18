@@ -9,17 +9,17 @@ $('#richer').mouseenter(function(e) {
 });
 function change_character(e){
 	var n=e.currentTarget.id
-	var charac_url
+	var class_name
 	switch(n){
 		case "richer":
-		  console.log("132");
+		class_name="act_richer"
 		  break;
 		case "gang":
-		  charac_url="url(../images/whore/whore0001.png)";
+		  class_name="act_gang";
 		  break;
 		case "whore":
+		class_name="act_whore";
 		break;
 	}
-	$('.large_photo').css('background-image')="url(../images/whore/whore0001.png)";
-	
+	$("#large_photo").attr('class', class_name);
 }
