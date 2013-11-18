@@ -5,20 +5,21 @@
      <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
      <meta charset="UTF-8" />
      <!--[if lte IE 6]>
-2
 <script src="DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
-3
 <script type="text/javascript">
-4
   DD_belatedPNG.fix('*');
-5
 </script>
-6
 <![endif]-->
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script>
+  $(document).ready(function(){
+    $("nav").sticky({topSpacing:-216});
+  });
+</script>
 </head>
 <body>
 <div class="wrapper">
@@ -28,37 +29,36 @@
       <h1>博酒俱乐部</h1>
      </a>
      <div class="download">
-       <a href="" >
+       <a href="app_package/BoJiuClub.ipa" >
         <img src="images/apple_app_store.gif" alt="">
       </a>
      </div>
       <nav>
         <ul>
           <li class="first" id="news">
-            <a href="#">最新消息</a>
+            <a href="#news_cont">最新消息</a>
           </li>
           <li id="feature">
-            <a href="#" >游戏特色</a>
+            <a href="#feature_cont" >游戏特色</a>
           </li>
           <li id="character">
-            <a href="#" >角色介绍</a>
+            <a href="#character_cont" >角色介绍</a>
           </li>
           <li class="last" id="play_game">
-            <a href="#">玩法游戏</a>
+            <a href="#play_game_cont">玩法简介</a>
           </li>
         </ul>
      </nav>
   </header>
   <div class="contant">
-    <!-- <section>
-      <h1>最新消息</h1>
-    </section> -->
+   
     <section id="feature_cont">
       <h1 >游戏特色</h1>
       <article>
         <p>博酒俱乐部是一款生动有趣的横向动作游戏。您需要操作一个酒店客人，用不同的技能和道具不断的跃过各种障碍，打破自己的最佳成绩。游戏中酒店客人拥有二次弹跳、翻越及短暂腾空的能力（需要消耗能量），还能使用道具用物品攻击障碍物。</p>
       </article>
     </section>
+
     <section id="character_cont">
       <h1 >角色介绍</h1>
       <div class="display_actor">
@@ -66,31 +66,60 @@
         <div class="detail">
           <dl>
             <dt>大富豪</dt>
+            <dd>55岁</dd>
             <dd>全球十大企业家之一</dd>
             <dd>兴趣 : 并购其他公司</dd>
           </dl>
         </div>
+<!--         <div class="large_photo gang"></div>
+        <div class="detail">
+          <dl>
+            <dt>黑道大哥</dt>
+            <dd>40岁</dd>
+            <dd>盘踞东西南北各方势力的黑道大哥</dd>
+            <dd>兴趣:一打十</dd>
+          </dl>
+        </div>
+        <div class="large_photo whore"></div>
+        <div class="detail">
+          <dl>
+            <dt>酒店红牌</dt>
+            <dd>25岁</dd>
+            <dd>拼酒第一，交际手腕一流的酒店女公关</dd>
+            <dd>兴趣 : 玩吹牛</dd>
+          </dl>
+        </div> -->
         <div class="actors">
-          <img src="images/richer.jpg" alt="">
-          <img src="images/gang.jpg" alt="">
-          <img src="images/whore.jpg" alt="">
+          <a href="" id="richer"><img src="images/richer.jpg" alt=""></a>
+          <a href="" id="gang"><img src="images/gang.jpg" alt=""></a>
+          <a href="" id="whore"><img src="images/whore.jpg" alt=""></a>
         </div>
       </div>
     </section>
+
     <section id="play_game_cont">
       <h1 >玩法简介</h1>
       <article>
         <p>游戏开始后，酒店客人会自动不断地向前奔跑，点击左下角萤幕可进行跳跃，越过障碍物；点击右下角萤幕可使用酒瓶，进行攻击；而在空中点击，可以施展腾空跳跃，如果连续点击，还有短暂旋转飞行的能力（需要消耗能量）。玩家必须小心碰到酒店小姐和服务生，能量值会减少；碰到警察，酒店客人脸色会变黑，游戏立即结束。</p>
       </article>
-      <img src="images/play_game_pic/06-5.png" alt="" >
+      <img src="images/play_game_pic/06-5.png" alt="" id="ri">
       <img src="images/play_game_pic/05-1.png" alt="" >
       <img src="images/play_game_pic/04-3.png" alt="" >
     </section>
 
+     <section id="news_cont">
+        <h1>兑换规则</h1>
+        <div class="rule">
+          <a href="https://guest41.italking.asia/mobile_guest.php?gid=bet9" target="_blank" class="exchange">
+          我要兑换</a>
+        </div>
+      </section>
+
   </div>
-<footer>
-  Copyright © 2013 博九网 Reserved
-</footer>
-</div>
+    <footer>
+      Copyright © 2013 博九网 Reserved
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/display_characater.js"></script>
 </body>
 </html>
