@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_outline.scss */
+* {
+  outline: 2px dotted red;
+}
+
+/* line 2, ../sass/partials/_outline.scss */
+* * {
+  outline: 2px dotted green;
+}
+
+/* line 3, ../sass/partials/_outline.scss */
+* * * {
+  outline: 2px dotted orange;
+}
+
+/* line 4, ../sass/partials/_outline.scss */
+* * * * {
+  outline: 2px dotted blue;
+}
+
+/* line 5, ../sass/partials/_outline.scss */
+* * * * * {
+  outline: 1px solid red;
+}
+
+/* line 6, ../sass/partials/_outline.scss */
+* * * * * * {
+  outline: 1px solid green;
+}
+
+/* line 7, ../sass/partials/_outline.scss */
+* * * * * * * {
+  outline: 1px solid orange;
+}
+
+/* line 8, ../sass/partials/_outline.scss */
+* * * * * * * * {
+  outline: 1px solid blue;
+}
+
+/* line 8, ../sass/main.scss */
+body {
+  background: url(../images/heading_bg.jpg) #060104 center top no-repeat;
+  color: #404040;
+  font-family: Arial,"微軟正黑體", "新細明體", "Lucida Sans Unicode", Helvetica, Verdana, sans-serif;
+  font-size: 15px;
+  background-color: #F7F7F7;
+}
+
+/* line 15, ../sass/main.scss */
+a {
+  text-decoration: none;
+  color: #404040;
+}
+
+/* line 19, ../sass/main.scss */
+.wrapper {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+}
+/* line 42, ../sass/partials/_blankwork.scss */
+.wrapper:before, .wrapper:after {
+  content: "";
+  display: table;
+}
+/* line 48, ../sass/partials/_blankwork.scss */
+.wrapper:after {
+  clear: both;
+}
+
+/* line 22, ../sass/main.scss */
+header {
+  display: inline;
+  float: left;
+  width: 960px;
+}
+/* line 25, ../sass/main.scss */
+header a img {
+  position: absolute;
+  top: 24px;
+}
+/* line 29, ../sass/main.scss */
+header a h1 {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+}
+/* line 31, ../sass/main.scss */
+header nav {
+  margin: 84px 0px 17px 0px;
+  float: right;
+  border-bottom: 2px #c11459 solid;
+  width: 800px;
+}
+/* line 36, ../sass/main.scss */
+header nav ul {
+  float: right;
+  margin-right: 72px;
+}
+/* line 39, ../sass/main.scss */
+header nav ul li {
+  list-style-type: none;
+  float: left;
+  font-size: 18px;
+  padding: 13px 14px;
+  color: #777A69;
+}
+/* line 45, ../sass/main.scss */
+header nav ul li:hover {
+  background-color: #c11459;
+}
+/* line 47, ../sass/main.scss */
+header nav ul li:hover a {
+  color: #FEE0EC;
+}
+
+/* line 55, ../sass/main.scss */
+.banner {
+  height: 393px;
+  background: #7e1459 url(../images/head_bg.jpg) top center no-repeat;
+}
+
+/* line 60, ../sass/main.scss */
+.iphone {
+  float: left;
+  width: 729px;
+  height: 428px;
+  background: url(../images/iphone.png) top center no-repeat;
+  position: relative;
+  top: 130px;
+  left: -30px;
+}
+
+/* line 70, ../sass/main.scss */
+.download_area {
+  display: inline-block;
+  width: 220px;
+  height: 166px;
+  background: url(../images/download_game.png) top center no-repeat;
+  margin-top: 130px;
+}
+
+/* line 78, ../sass/main.scss */
+.download_btn {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+  width: 220px;
+  height: 76px;
+  background: url(../images/free_normal.png) top center no-repeat;
+  margin-top: 73px;
+}

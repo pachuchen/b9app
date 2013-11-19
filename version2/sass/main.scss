@@ -1,0 +1,85 @@
+﻿@import "compass";
+@import "compass/reset";
+@import "partials/blankwork";
+@import "partials/outline";
+
+$primeColor:#c11459;
+
+body{
+	background: url(../images/heading_bg.jpg) #060104 center top no-repeat;
+	color: #404040;
+	font-family: Arial,"微軟正黑體", "新細明體", "Lucida Sans Unicode", Helvetica, Verdana, sans-serif;
+	font-size: 15px;
+	background-color: #F7F7F7;
+}
+a{
+	text-decoration: none;
+	color: #404040;
+}
+.wrapper{
+	@include wrapper;
+}
+header{
+	@include container;
+	a{
+		img{ 
+			position: absolute; 
+			top:24px;
+		}
+		h1{ @include hide-text; }
+	}
+	nav{
+		margin: 84px 0px 17px 0px;
+		float: right;
+		border-bottom: 2px $primeColor solid ;
+		width: 800px;
+		ul{
+			float: right;
+			margin-right: 72px ;
+			li{
+				list-style-type: none;
+				float: left;
+				font-size: 18px;
+				padding: 13px 14px;
+				color: #777A69;
+				&:hover{
+					background-color: #c11459;
+					a{
+						color: #FEE0EC;
+					}	
+				}
+			}
+		}
+	}
+}
+.banner{
+	height: 393px;
+	background:#7e1459 url(../images/head_bg.jpg) top center no-repeat;
+
+	}
+.iphone{
+	float: left;
+	width: 729px;
+	height: 428px;
+	background: url(../images/iphone.png) top center no-repeat;
+	position: relative;
+	top: 130px;
+	left: -30px;
+}
+
+.download_area{
+	display: inline-block;
+width:get_width(3);
+height: 166px;
+background: url(../images/download_game.png) top center no-repeat;
+margin-top: 130px;
+}
+
+.download_btn{
+	@include hide-text;
+	display: block;
+	 width:get_width(3);
+	 height: 76px; 
+	 background: url(../images/free_normal.png) top center no-repeat;	
+	 margin-top: 73px;
+}
