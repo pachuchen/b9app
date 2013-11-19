@@ -73,13 +73,22 @@ width:get_width(3);
 height: 166px;
 background: url(../images/download_game.png) top center no-repeat;
 margin-top: 130px;
+a{
+	color: #DAB4D3;
+	padding: 0px 74px;
+	font-size: 18px;
 }
-
 .download_btn{
 	@include hide-text;
+	padding: 0px;
 	display: block;
 	 width:get_width(3);
 	 height: 76px; 
 	 background: url(../images/free_normal.png) top center no-repeat;	
 	 margin-top: 73px;
+	 &:hover{
+	 	background-image: url(../images/free_hover.png);
+	 }
 }
+}
+

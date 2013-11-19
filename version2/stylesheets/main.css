@@ -207,15 +207,25 @@ header nav ul li:hover a {
   background: url(../images/download_game.png) top center no-repeat;
   margin-top: 130px;
 }
-
-/* line 78, ../sass/main.scss */
-.download_btn {
+/* line 76, ../sass/main.scss */
+.download_area a {
+  color: #DAB4D3;
+  padding: 0px 74px;
+  font-size: 18px;
+}
+/* line 81, ../sass/main.scss */
+.download_area .download_btn {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
+  padding: 0px;
   display: block;
   width: 220px;
   height: 76px;
   background: url(../images/free_normal.png) top center no-repeat;
   margin-top: 73px;
+}
+/* line 89, ../sass/main.scss */
+.download_area .download_btn:hover {
+  background-image: url(../images/free_hover.png);
 }
