@@ -1,7 +1,7 @@
 ﻿@import "compass";
 @import "compass/reset";
 @import "partials/blankwork";
-//@import "partials/outline";
+@import "partials/outline";
 
 $primeColor:#c11459;
 
@@ -16,6 +16,9 @@ body{
 a{
 	text-decoration: none;
 	color: #404040;
+	&:hover{
+	color: $primeColor; 
+	}
 }
 .wrapper{
 	@include wrapper;
@@ -215,15 +218,16 @@ p{
 	img{
 		margin: 10px 0px 0px 150px;
 	}
+	
 	h2{
-		margin: 0px 0px 0px 150px;
-		font-size: 28px;
-		color: #E1A30F;
+		@include hide-text;
+		margin: 10px 0px 0px 150px;
+		background: url(../images/contect.jpg)left top no-repeat;
 	}
 
 	.exchange_btn{
 		@include hide-text;
-		margin: 30px 0px 0px 213px;
+		//margin: 30px 0px 0px 213px;
 		display: block;
 		width: 240px;
 		height: 76px;
@@ -231,7 +235,20 @@ p{
 		&:hover{
 			background-image:url(../images/exchange_hover.png); 
 		}
-	}	
+	}
+	.italking{
+		float: left;
+		margin: 10px 0px 0px 150px;
+	h3{
+		text-indent: 80px;
+		}
+	}
+	.qrcode{
+		float: left;
+	img{
+		margin: 0px 30px;
+		}		
+	}
 }
 footer{
 	line-height: 50px;
