@@ -1,4 +1,4 @@
-﻿@import "compass";
+@import "compass";
 @import "compass/reset";
 @import "partials/blankwork";
 //@import "partials/outline";
@@ -21,7 +21,6 @@ header{
 			margin-top: 31px;
 		}
 		h1{
-
 			@include hide-text;
 		}
 	}
@@ -158,5 +157,5 @@ footer{
 			float: left;
 		}
 .act_gang{ background: url(../images/gang/gang0001.png)top center no-repeat;}
-.act_whore{background: url(../images/whore/whore0001.png)top center no-repeat;}
+.act_hostess{background: url(../images/hostess/hostess0001.png)top center no-repeat;}
 .act_richer{background: url(../images/richer/richer0001.png) top center no-repeat;}

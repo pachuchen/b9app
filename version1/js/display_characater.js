@@ -4,7 +4,7 @@ $('#richer').mouseenter(function(e) {
  $("#gang").mouseenter(function(e) {
 	change_character(e)
 });
- $("#whore").mouseenter(function(e) {
+ $("#hostess").mouseenter(function(e) {
 	change_character(e)
 });
 function change_character(e){
@@ -17,8 +17,8 @@ function change_character(e){
 		case "gang":
 		  class_name="act_gang";
 		  break;
-		case "whore":
-		class_name="act_whore";
+		case "hostess":
+		class_name="act_hostess";
 		break;
 	}
 	$("#large_photo").attr('class', class_name);

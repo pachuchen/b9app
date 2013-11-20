@@ -14,12 +14,7 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script type="text/javascript" src="js/jquery.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script>
-  $(document).ready(function(){
-    $("nav").sticky({topSpacing:-216});
-  });
-</script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -31,7 +26,7 @@
       <nav>
         <ul>
           <li id="news">
-            <a href="#news_cont">最新消息</a>
+            <a href="#exchange_cont">兑换规则</a>
           </li>
           <li id="feature">
             <a href="#feature_cont" >游戏特色</a>
@@ -51,7 +46,7 @@
     <div class="iphone"></div>
     <div class="download_area">
       <a href="app_package/BoJiuClub.ipa" class="download_btn">免费下载</a>
-      <a href="install_tutor">安装教学</a>
+      <a href="install_tutor.html" target="_blank">安装教学</a>
     </div>
   </div>
 </section>
@@ -67,7 +62,6 @@
     <section id="character_cont">
       <h1 >角色介绍</h1>
       <div class="display_actor">
-        <div id="large_photo" class="act_richer"></div>
         <div class="detail">
           <dl>
             <dt>大富豪</dt>
@@ -76,6 +70,7 @@
             <dd>兴趣 : 并购其他公司</dd>
           </dl>
         </div>
+        <div id="large_photo" class="act_richer"></div>
 <!--         <div class="large_photo gang"></div>
         <div class="detail">
           <dl>
@@ -85,7 +80,7 @@
             <dd>兴趣:一打十</dd>
           </dl>
         </div>
-        <div class="large_photo whore"></div>
+        <div class="large_photo hostess"></div>
         <div class="detail">
           <dl>
             <dt>酒店红牌</dt>
@@ -95,9 +90,9 @@
           </dl>
         </div> -->
         <div class="actors">
-          <a href="" id="richer"><img src="images/richer.jpg" alt=""></a>
-          <a href="" id="gang"><img src="images/gang.jpg" alt=""></a>
-          <a href="" id="whore"><img src="images/whore.jpg" alt=""></a>
+          <div id="richer"></div>
+          <div id="gang"></div>
+          <div id="hostess"></div>
         </div>
       </div>
     </section>
@@ -107,17 +102,23 @@
       <article>
         <p>游戏开始后，酒店客人会自动不断地向前奔跑，点击左下角萤幕可进行跳跃，越过障碍物；点击右下角萤幕可使用酒瓶，进行攻击；而在空中点击，可以施展腾空跳跃，如果连续点击，还有短暂旋转飞行的能力（需要消耗能量）。玩家必须小心碰到酒店小姐和服务生，能量值会减少；碰到警察，酒店客人脸色会变黑，游戏立即结束。</p>
       </article>
-      <img src="images/play_game_pic/06-5.png" alt="" id="ri">
-      <img src="images/play_game_pic/05-1.png" alt="" >
-      <img src="images/play_game_pic/04-3.png" alt="" >
     </section>
 
-     <section id="news_cont">
+     <section id="exchange_cont">
         <h1>兑换规则</h1>
-        <div class="rule">
-          <a href="https://guest41.italking.asia/mobile_guest.php?gid=bet9" target="_blank" class="exchange">
+        <ul>
+          <li>在博九俱乐部中游戏可以累积积分，可用于兑换好礼赠品。</li>
+          <li>奖品：博九网点数，兑换比例：200（积分）：1（博九网点数），将来还会陆续推出更多超值好礼供兑换，敬请期待。</li>
+          <li>博九网点数可用以玩博九网类丰富精采的棋牌游戏，如：三公、牛牛…等，无任何使用限制。</li>
+          <li>丰富游戏内容请至博九官网查看：<a href="http://bet9.bet">http://bet9.bet</a></li>
+          <li>您若已经累积一定积分，请任择透过下方2种方式进行积分兑换，兑换流程如下：</li>
+        </ul>
+        <img src="images/exchange-sop.jpg" height="111" width="720" alt="">
+        <h2>兑换专员联系方式</h2>
+          <a href="https://guest41.italking.asia/mobile_guest.php?gid=bet9" target="_blank" class="exchange_btn">
           我要兑换</a>
-        </div>
+          <h3><a href="">線上客服系統</a></h3>
+       
       </section>
 
   </div>
