@@ -1,7 +1,7 @@
 ﻿@import "compass";
 @import "compass/reset";
 @import "partials/blankwork";
-@import "partials/outline";
+//@import "partials/outline";
 
 $primeColor:#c11459;
 
@@ -15,10 +15,15 @@ body{
 }
 a{
 	text-decoration: none;
-	color: #404040;
+	color: #1A98A6;
 	&:hover{
 	color: $primeColor; 
 	}
+}
+
+span{
+	color: $primeColor;
+	font-weight: bold;
 }
 .wrapper{
 	@include wrapper;
@@ -27,17 +32,46 @@ a{
 h1{
 	@include hide-text;
 }
+#logo{
+	img{
+		margin: 42px 0px 0px -30px;
+	}
+}
+
+.stick_bar{
+	width: 2000px;
+	display: none;
+position: relative;	
+	z-index: 10;
+	background-color: $primeColor;
+	margin: 0px auto;
+	ul{
+		@include clearfix;
+		li{
+			float: left;
+			font-size: 20px;
+			padding: 5px 50px;
+			font-weight: bold;
+			a{
+				color: #FDEAEE;
+				a:hover{
+					color:#38074E;
+				}
+			}
+		}
+	}
+}
 
 header{
 	@include container;
 	a{
 		img{ 
 			position: absolute; 
-			top:24px;
+			top:-30px;
 		}
 	}
 	nav{
-		margin: 84px 0px 17px 0px;
+		margin: 0px 0px 17px 0px;
 		float: right;
 		border-bottom: 2px $primeColor solid ;
 		width: 800px;
@@ -45,7 +79,6 @@ header{
 			float: right;
 			margin-right: 72px ;
 			li{
-				list-style-type: none;
 				float: left;
 				font-size: 18px;
 				padding: 13px 14px;
@@ -111,7 +144,7 @@ a{
 	div{
 		width: 351px;
 		height: 209px;
-		border-right: 3px $primeColor solid;
+		border-right: 3px #D86994 solid;
 	}
 }
 .contant{
@@ -119,7 +152,7 @@ a{
 }
 
 #feature_cont{
-	background: url(../images/content_1.jpg) 148px 0px no-repeat;
+	background: url(../images/content_1.jpg) 159px 0px no-repeat;
 p{
 	width: 518px;
 	padding: 47px 0px 195px 385px;
@@ -127,9 +160,9 @@ p{
 }
 
 #character_cont{
-	background: url(../images/role.jpg) 148px 0px no-repeat;
+	background: url(../images/role.jpg) 124px 0px no-repeat;
 	width: 960px;
-	height: 369px;
+	height: 368px;
 }
 
 .detail{
@@ -161,8 +194,8 @@ p{
 	div{
 		display: inline-block;
 		float: left;
-		width: 98px;
-		height: 98px;
+		width: 93px;
+		height: 122px;
 		margin: 0px 10px;
 		&:hover{
 			cursor: pointer;
@@ -201,7 +234,8 @@ p{
 }
 
 #exchange_cont{
-	background: url(../images/exchange.jpg) 130px top no-repeat;
+
+	//background: url(../images/exchange.jpg) 130px top no-repeat;
 	width: 960px;
 	h1{
 		margin-top: 150px;
@@ -213,6 +247,7 @@ p{
 		li{
 			line-height: 20px;
 			padding: 10px 0px;
+			width: 500px;
 		}
 	}
 	img{
@@ -238,7 +273,7 @@ p{
 	}
 	.italking{
 		float: left;
-		margin: 28px 166px 0px 234px;
+		margin: 28px 70px 0px 100px;
 	h3{
 		text-indent: 80px;
 		}
@@ -247,6 +282,9 @@ p{
 		float: left;
 	img{
 		margin: 0px 30px;
+		}
+		h3{
+		text-indent: 10px;
 		}		
 	}
 }

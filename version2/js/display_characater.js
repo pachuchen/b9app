@@ -48,3 +48,54 @@ function change_character(e){
 	$("#actor_interest").text(actor.interest);
 
 }
+  $(function(){
+    $('.exchange').click(function(){
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+      $body.animate({
+        scrollTop: $('#exchange_cont').offset().top-60
+      }, 900);
+      return false;
+    });
+  });
+    $(function(){
+    $('.feature').click(function(){
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+      $body.animate({
+        scrollTop:$('#feature_cont').offset().top-60
+      }, 300);
+      return false;
+    });
+  });
+    $(function(){
+    $('.character').click(function(){
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+      $body.animate({
+        scrollTop:$('#character_cont').offset().top-60
+      }, 500);
+      return false;
+    });
+  });
+    $(function(){
+    $('.play_game').click(function(){
+      var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+      $body.animate({
+        scrollTop:$('#play_game_cont').offset().top
+      }, 700);
+      return false;
+    });
+  });
+
+
+//定住頂欄
+    $(document).ready(function(){
+    $(".stick_bar").sticky({topSpacing:0});
+  });
+$(window).scroll(function (e) {
+ if($(e.currentTarget).scrollTop()>=200){
+ 	$('.stick_bar').css('display', 'block');
+ 	console.log($(e.currentTarget).scrollTop())
+ }else{
+ 	$('.stick_bar').css('display', 'none');
+ }
+});
+    

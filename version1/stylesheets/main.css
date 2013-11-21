@@ -156,7 +156,7 @@ header nav ul li a {
   line-height: 35px;
 }
 
-#news_cont img {
+#rule_cont img {
   margin: 20px 15px;
 }
 
@@ -250,8 +250,8 @@ footer {
   padding: 30px 0px;
 }
 
-#news:hover {
-  background: url(../images/news.jpg) center top no-repeat;
+#rule:hover {
+  background: url(../images/rule.jpg) center top no-repeat;
 }
 
 #feature:hover {

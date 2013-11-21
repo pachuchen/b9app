@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 17, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,87 +21,47 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
-}
-
-/* line 1, ../sass/partials/_outline.scss */
-* {
-  outline: 2px dotted red;
-}
-
-/* line 2, ../sass/partials/_outline.scss */
-* * {
-  outline: 2px dotted green;
-}
-
-/* line 3, ../sass/partials/_outline.scss */
-* * * {
-  outline: 2px dotted orange;
-}
-
-/* line 4, ../sass/partials/_outline.scss */
-* * * * {
-  outline: 2px dotted blue;
-}
-
-/* line 5, ../sass/partials/_outline.scss */
-* * * * * {
-  outline: 1px solid red;
-}
-
-/* line 6, ../sass/partials/_outline.scss */
-* * * * * * {
-  outline: 1px solid green;
-}
-
-/* line 7, ../sass/partials/_outline.scss */
-* * * * * * * {
-  outline: 1px solid orange;
-}
-
-/* line 8, ../sass/partials/_outline.scss */
-* * * * * * * * {
-  outline: 1px solid blue;
 }
 
 /* line 8, ../sass/main.scss */
@@ -117,14 +77,20 @@ body {
 /* line 16, ../sass/main.scss */
 a {
   text-decoration: none;
-  color: #404040;
+  color: #1A98A6;
 }
 /* line 19, ../sass/main.scss */
 a:hover {
   color: #c11459;
 }
 
-/* line 23, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
+span {
+  color: #c11459;
+  font-weight: bold;
+}
+
+/* line 28, ../sass/main.scss */
 .wrapper {
   width: 960px;
   margin-left: auto;
@@ -141,60 +107,102 @@ a:hover {
   clear: both;
 }
 
-/* line 27, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 h1 {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
 }
 
-/* line 31, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
+#logo img {
+  margin: 42px 0px 0px -30px;
+}
+
+/* line 41, ../sass/main.scss */
+.stick_bar {
+  width: 2000px;
+  display: none;
+  position: relative;
+  z-index: 10;
+  background-color: #c11459;
+  margin: 0px auto;
+}
+/* line 48, ../sass/main.scss */
+.stick_bar ul {
+  *zoom: 1;
+}
+/* line 42, ../sass/partials/_blankwork.scss */
+.stick_bar ul:before, .stick_bar ul:after {
+  content: "";
+  display: table;
+}
+/* line 48, ../sass/partials/_blankwork.scss */
+.stick_bar ul:after {
+  clear: both;
+}
+/* line 50, ../sass/main.scss */
+.stick_bar ul li {
+  float: left;
+  font-size: 20px;
+  padding: 5px 50px;
+  font-weight: bold;
+}
+/* line 55, ../sass/main.scss */
+.stick_bar ul li a {
+  color: #FDEAEE;
+}
+/* line 57, ../sass/main.scss */
+.stick_bar ul li a a:hover {
+  color: #38074E;
+}
+
+/* line 65, ../sass/main.scss */
 header {
   display: inline;
   float: left;
   width: 960px;
 }
-/* line 34, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 header a img {
   position: absolute;
-  top: 24px;
+  top: -30px;
 }
-/* line 39, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 header nav {
-  margin: 84px 0px 17px 0px;
+  margin: 0px 0px 17px 0px;
   float: right;
   border-bottom: 2px #c11459 solid;
   width: 800px;
 }
-/* line 44, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 header nav ul {
   float: right;
   margin-right: 72px;
 }
-/* line 47, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 header nav ul li {
-  list-style-type: none;
   float: left;
   font-size: 18px;
   padding: 13px 14px;
   color: #777A69;
 }
-/* line 53, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 header nav ul li:hover {
   background-color: #c11459;
 }
-/* line 55, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 header nav ul li:hover a {
   color: #FEE0EC;
 }
 
-/* line 63, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .banner {
   height: 393px;
   background: #7e1459 url(../images/head_bg.jpg) top center no-repeat;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .iphone {
   float: left;
   width: 729px;
@@ -205,7 +213,7 @@ header nav ul li:hover a {
   left: -30px;
 }
 
-/* line 78, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .download_area {
   display: inline-block;
   width: 220px;
@@ -213,7 +221,7 @@ header nav ul li:hover a {
   background: url(../images/download_game.png) top center no-repeat;
   margin-top: 130px;
 }
-/* line 84, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .download_area a {
   color: #DAB4D3;
   padding: 0px 65px;
@@ -221,12 +229,12 @@ header nav ul li:hover a {
   font-weight: bold;
   background: url(../images/tringle_normal.gif) 150px 6px no-repeat;
 }
-/* line 90, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .download_area a:hover {
   background-image: url(../images/tringle_hover.gif);
   color: #43071E;
 }
-/* line 95, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .download_area .download_btn {
   text-indent: -119988px;
   overflow: hidden;
@@ -238,12 +246,12 @@ header nav ul li:hover a {
   background: url(../images/free_normal.png) top center no-repeat;
   margin-top: 73px;
 }
-/* line 103, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .download_area .download_btn:hover {
   background-image: url(../images/free_hover.png);
 }
 
-/* line 109, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 .linespace {
   width: 960px;
   margin-left: auto;
@@ -259,14 +267,14 @@ header nav ul li:hover a {
 .linespace:after {
   clear: both;
 }
-/* line 111, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .linespace div {
   width: 351px;
   height: 209px;
-  border-right: 3px #c11459 solid;
+  border-right: 3px #D86994 solid;
 }
 
-/* line 117, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .contant {
   width: 960px;
   margin-left: auto;
@@ -283,40 +291,40 @@ header nav ul li:hover a {
   clear: both;
 }
 
-/* line 121, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 #feature_cont {
-  background: url(../images/content_1.jpg) 148px 0px no-repeat;
+  background: url(../images/content_1.jpg) 159px 0px no-repeat;
 }
-/* line 123, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 #feature_cont p {
   width: 518px;
   padding: 47px 0px 195px 385px;
 }
 
-/* line 129, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 #character_cont {
-  background: url(../images/role.jpg) 148px 0px no-repeat;
+  background: url(../images/role.jpg) 124px 0px no-repeat;
   width: 960px;
-  height: 369px;
+  height: 368px;
 }
 
-/* line 135, ../sass/main.scss */
+/* line 168, ../sass/main.scss */
 .detail {
   float: left;
   padding: 53px 0px 0px 208px;
   letter-spacing: 10px;
 }
-/* line 139, ../sass/main.scss */
+/* line 172, ../sass/main.scss */
 .detail dt {
   font-size: 30px;
   line-height: 45px;
 }
-/* line 143, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .detail dd {
   line-height: 28px;
 }
 
-/* line 148, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 #large_photo {
   margin: 30px 100px 0px 0px;
   width: 154px;
@@ -324,103 +332,103 @@ header nav ul li:hover a {
   float: right;
 }
 
-/* line 154, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 .act_gang {
   background: url(../images/gang/gang0001.png) top center no-repeat;
 }
 
-/* line 155, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .act_hostess {
   background: url(../images/hostess/hostess0001.png) top center no-repeat;
 }
 
-/* line 156, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 .act_richer {
   background: url(../images/richer/richer0001.png) top center no-repeat;
 }
 
-/* line 158, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .actors {
   float: left;
   margin: 30px 0px 0px 208px;
 }
-/* line 161, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 .actors div {
   display: inline-block;
   float: left;
-  width: 98px;
-  height: 98px;
+  width: 93px;
+  height: 122px;
   margin: 0px 10px;
 }
-/* line 167, ../sass/main.scss */
+/* line 200, ../sass/main.scss */
 .actors div:hover {
   cursor: pointer;
 }
 
-/* line 173, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 #richer {
   background: url(../images/richer_icon.jpg) top center no-repeat;
 }
-/* line 175, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 #richer:hover {
   background-image: url(../images/richer_icon_hover.jpg);
 }
 
-/* line 179, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 #gang {
   background: url(../images/gang_icon.jpg) top center no-repeat;
 }
-/* line 181, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 #gang:hover {
   background-image: url(../images/gang_icon_hover.jpg);
 }
 
-/* line 185, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 #hostess {
   background: url(../images/hostess_icon.jpg);
 }
-/* line 187, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #hostess:hover {
   background-image: url(../images/hostess_icon_hover.jpg);
 }
 
-/* line 192, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 #play_game_cont {
   background: url(../images/play_game.jpg) 148px 0px no-repeat;
   width: 1003px;
   height: 670px;
 }
-/* line 196, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 #play_game_cont p {
   margin: 140px 0px 0px 382px;
   width: 613px;
 }
 
-/* line 203, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 #exchange_cont {
-  background: url(../images/exchange.jpg) 130px top no-repeat;
   width: 960px;
 }
-/* line 206, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 #exchange_cont h1 {
   margin-top: 150px;
 }
-/* line 209, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 #exchange_cont ul {
   list-style: disc  outside;
   margin: 30px 0px 0px 150px;
   width: 700px;
 }
-/* line 213, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 #exchange_cont ul li {
   line-height: 20px;
   padding: 10px 0px;
+  width: 500px;
 }
-/* line 218, ../sass/main.scss */
+/* line 253, ../sass/main.scss */
 #exchange_cont img {
   margin: 10px 0px 0px 150px;
 }
-/* line 222, ../sass/main.scss */
+/* line 257, ../sass/main.scss */
 #exchange_cont h2 {
   text-indent: -119988px;
   overflow: hidden;
@@ -428,7 +436,7 @@ header nav ul li:hover a {
   margin: 10px 0px 0px 150px;
   background: url(../images/contect.jpg) left top no-repeat;
 }
-/* line 228, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 #exchange_cont .exchange_btn {
   text-indent: -119988px;
   overflow: hidden;
@@ -438,45 +446,49 @@ header nav ul li:hover a {
   height: 76px;
   background: url(../images/exchane_normal.png) top center no-repeat;
 }
-/* line 235, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 #exchange_cont .exchange_btn:hover {
   background-image: url(../images/exchange_hover.png);
 }
-/* line 239, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 #exchange_cont .italking {
   float: left;
-  margin: 28px 166px 0px 234px;
+  margin: 28px 70px 0px 100px;
 }
-/* line 242, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 #exchange_cont .italking h3 {
   text-indent: 80px;
 }
-/* line 246, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
 #exchange_cont .qrcode {
   float: left;
 }
-/* line 248, ../sass/main.scss */
+/* line 283, ../sass/main.scss */
 #exchange_cont .qrcode img {
   margin: 0px 30px;
 }
+/* line 286, ../sass/main.scss */
+#exchange_cont .qrcode h3 {
+  text-indent: 10px;
+}
 
-/* line 253, ../sass/main.scss */
+/* line 291, ../sass/main.scss */
 footer {
   line-height: 50px;
   text-align: center;
 }
 
-/* line 257, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 .act_gang {
   background: url(../images/gang/gang0001.png) top center no-repeat;
 }
 
-/* line 258, ../sass/main.scss */
+/* line 296, ../sass/main.scss */
 .act_hostess {
   background: url(../images/hostess/hostess0001.png) top center no-repeat;
 }
 
-/* line 259, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 .act_richer {
   background: url(../images/richer/richer0001.png) top center no-repeat;
 }
