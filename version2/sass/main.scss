@@ -181,6 +181,30 @@ p{
 	width: 518px;
 	padding: 47px 0px 195px 385px;
 }
+#teachSlider {
+            width:620px;
+            height:287px;
+        }
+        .flowContainer {
+            width:439px;
+            height:408px;
+            position: absolute;
+            top: 12px;
+            left: 78px;
+        }
+        .flowContainer div {
+            width:439px;
+            height:408px;
+            display:block;
+        }
+        .iphoneFrame {
+        	background-image: url('images/teach/Iphone5.png');
+            width:620px;
+            height:287px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 }
 
 #character_cont{
@@ -248,18 +272,49 @@ p{
 }
 
 #play_game_cont{
-	background: url(../images/play_game.jpg) 148px 0px no-repeat;
+	background: url(../images/play_game.jpg) 150px 0px no-repeat;
 	width: 1003px;
 	height: 670px;
-	p{
+	article{
+		p{
 		margin: 140px 0px 0px 382px;
 		width: 613px;
+	 }
 	}
-
+	    #teachSlider {
+            width:620px;
+            height:287px;
+            margin: 30px 0px 0px 500px;
+        }
+        .flowContainer {
+            width:439px;
+            height:408px;
+            position: absolute;
+            top: 12px;
+            left: 78px;
+        }
+        .flowContainer  {
+        	div{
+        		width:439px;
+            height:408px;
+            display:block;
+            h3{
+            	padding-top: 40px;
+            }
+        	} 
+        }
+        .iphoneFrame {
+        	background-image: url('../images/teach/Iphone5.png');
+            width:620px;
+            height:287px;
+            position: relative;
+            top: -415px;
+            left: -8px;
+            z-index: 100;
+        }
 }
 
 #contect_cont{
-
 	//background: url(../images/contect.jpg) 130px top no-repeat;
 	width: 960px;
 	h1{
@@ -290,7 +345,7 @@ p{
 		display: block;
 		width: 240px;
 		height: 76px;
-		margin-top: 13px;
+		margin: 48px 0px 65px 59px;
 		background: url(../images/contect_btn_normal.png) top center no-repeat;
 		&:hover{
 			background-image:url(../images/contect_btn_hover.png); 
@@ -298,7 +353,7 @@ p{
 	}
 	.italking{
 		float: left;
-		margin: 0px 70px 0px 100px;
+		margin: 0px 50px 0px 150px;
 		padding-top: 60px;
 		background: url(../images/contect_us.jpg) top left no-repeat;
 	}
@@ -308,7 +363,9 @@ p{
 		margin: 60px 30px 0px 30px;
 		}
 		h3{
-		text-indent: 10px;
+		width: 94px;
+		line-height: 20px;
+		margin: 0px 0px 0px 38px;
 		}		
 	}
 }

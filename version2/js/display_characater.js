@@ -132,13 +132,30 @@ $(document).ready(function(){
 　　var $this_Top=$this.scrollTop();
 
 　　if($this_Top < 80){
-　　　$('.stick_bar').stop().animate({top:"-65px"}, 460);
+　　　$('.stick_bar').stop().animate({top:"-65px"}, 560);
 　　　}
 　　　　if($this_Top > 80){
-　　　　$('.stick_bar').stop().animate({top:"0px"}, 700);
+　　　　$('.stick_bar').stop().animate({top:"0px"}, 300);
 　　　 }
 　　}).scroll();
 　});
 
+});
+
+//遊戲流程輪播
+$(document).ready(function($) {
+  
+  $("#teachSlider").slides({
+    preload: true,
+    preloadImage: 'images/loading.gif',
+    play: 4500,
+    pause: 2500,
+    hoverPause: true,
+    container: 'flowContainer',
+    prev: 'btn_backward',
+    next: 'btn_forward',
+    generatePagination: false,
+    pagination: false
+  });
 });
     
