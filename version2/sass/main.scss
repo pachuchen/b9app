@@ -3,6 +3,7 @@
 @import "partials/blankwork";
 //@import "partials/outline";
 
+
 $primeColor:#c11459;
 
 body{
@@ -181,12 +182,13 @@ p{
 #large_photo{
 	margin: 30px 100px 0px 0px;
 			width: 154px;
-			height: 267px;
+			height: 225px;
 			float: right;
+			background-position: 0px 0px;
 		}
-.act_gang{ background: url(../images/gang/gang0001.png)top center no-repeat;}
-.act_hostess{background: url(../images/hostess/hostess0001.png)top center no-repeat;}
-.act_richer{background: url(../images/richer/richer0001.png) top center no-repeat;}
+.act_gang{ background: url(../images/gang.png) no-repeat;}
+.act_hostess{background: url(../images/hostess.png) no-repeat;}
+.act_richer{background: url(../images/richer.png) no-repeat;}
 
 .actors{
 	float: left;
@@ -292,6 +294,4 @@ footer{
 	line-height: 50px;
 	text-align: center;
 }
-.act_gang{ background: url(../images/gang/gang0001.png)top center no-repeat;}
-.act_hostess{background: url(../images/hostess/hostess0001.png)top center no-repeat;}
-.act_richer{background: url(../images/richer/richer0001.png) top center no-repeat;}
+
