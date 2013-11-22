@@ -2,8 +2,9 @@
 @import "compass/reset";
 @import "partials/blankwork";
 //@import "partials/outline";
-
-
+// @import "richer/*.png";
+// @import "gang/*.png";
+// @import "hostess/*.png";
 $primeColor:#c11459;
 
 body{
@@ -40,9 +41,9 @@ h1{
 }
 
 .stick_bar{
-	width: 2000px;
-	display: none;
-position: relative;	
+	width:100%;
+	position:fixed;
+	top:-65px;
 	z-index: 10;
 	background-color: $primeColor;
 	margin: 0px auto;
@@ -51,7 +52,7 @@ position: relative;
 		li{
 			float: left;
 			font-size: 20px;
-			padding: 5px 50px;
+			padding: 18px 10px 10px 30px;
 			font-weight: bold;
 			a{
 				color: #FDEAEE;
@@ -61,6 +62,27 @@ position: relative;
 			}
 		}
 	}
+}
+
+.stick_bar {
+  width:100%;
+  position:fixed;
+  top:-65px;
+  z-index: 9999;
+  background-color: #c11459;
+  margin: 0px auto;
+}
+.stick_bar section {
+  width: 960px;
+  margin: 0 auto;
+}
+.stick_bar section div {
+	width: 200px;
+	height: 60px;
+	margin-right: 250px;
+	background: url(../images/mini_logo.png) center top no-repeat;
+	float: left;
+	cursor: pointer;
 }
 
 header{
@@ -101,8 +123,8 @@ header{
 	}
 .iphone{
 	float: left;
-	width: 729px;
-	height: 428px;
+	width: 680px;
+	height: 450px;
 	background: url(../images/iphone.png) top center no-repeat;
 	position: relative;
 	top: 130px;
@@ -111,18 +133,19 @@ header{
 
 .download_area{
 	display: inline-block;
-width:get_width(3);
-height: 166px;
+width:250px;
+//height: 166px;
 background: url(../images/download_game.png) top center no-repeat;
 margin-top: 130px;
 a{
-	color: #DAB4D3;
-	padding: 0px 65px;
+	color: #FFF7FF;
+	padding: 0px 69px;
+	margin: 0px 55px;
 	font-size: 20px;
 	font-weight: bold;
-	background: url(../images/tringle_normal.gif)150px 6px no-repeat;
+	background: url(../images/install_tutor.png)top center no-repeat;
 	&:hover{
-	background-image: url(../images/tringle_hover.gif);
+	background-image: url(../images/install_tutor_hover.png);
 	color:#43071E;
 	}
 }
@@ -133,7 +156,7 @@ a{
 	 width:get_width(3);
 	 height: 76px; 
 	 background: url(../images/free_normal.png) top center no-repeat;	
-	 margin-top: 73px;
+	 margin: 65px 16px 5px 16px;
 	 &:hover{
 	 	background-image: url(../images/free_hover.png);
 	 }
@@ -169,10 +192,10 @@ p{
 .detail{
 	float: left;
 	padding: 53px 0px 0px 208px;
-	letter-spacing: 10px;
+	letter-spacing: 5px;
 	dt{
 		font-size: 30px;
-		line-height: 45px;
+		line-height: 55px;
 	}
 	dd{
 		line-height: 28px;
@@ -180,9 +203,9 @@ p{
 }
 
 #large_photo{
-	margin: 30px 100px 0px 0px;
-			width: 154px;
-			height: 225px;
+	margin: 0px 82px 0px 0px;
+			width: 213px;
+			height: 320px;
 			float: right;
 			background-position: 0px 0px;
 		}
@@ -235,9 +258,9 @@ p{
 
 }
 
-#exchange_cont{
+#contect_cont{
 
-	//background: url(../images/exchange.jpg) 130px top no-repeat;
+	//background: url(../images/contect.jpg) 130px top no-repeat;
 	width: 960px;
 	h1{
 		margin-top: 150px;
@@ -262,28 +285,27 @@ p{
 		background: url(../images/contect.jpg)left top no-repeat;
 	}
 
-	.exchange_btn{
+	.contect_btn{
 		@include hide-text;
-		//margin: 30px 0px 0px 213px;
 		display: block;
 		width: 240px;
 		height: 76px;
-		background: url(../images/exchane_normal.png) top center no-repeat;
+		margin-top: 13px;
+		background: url(../images/contect_btn_normal.png) top center no-repeat;
 		&:hover{
-			background-image:url(../images/exchange_hover.png); 
+			background-image:url(../images/contect_btn_hover.png); 
 		}
 	}
 	.italking{
 		float: left;
-		margin: 28px 70px 0px 100px;
-	h3{
-		text-indent: 80px;
-		}
+		margin: 0px 70px 0px 100px;
+		padding-top: 60px;
+		background: url(../images/contect_us.jpg) top left no-repeat;
 	}
 	.qrcode{
 		float: left;
 	img{
-		margin: 0px 30px;
+		margin: 60px 30px 0px 30px;
 		}
 		h3{
 		text-indent: 10px;
