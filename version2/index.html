@@ -15,7 +15,7 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.sticky.js"></script>
+
 <script type="text/javascript" src="js/jquery.timers.js"></script>
 <script src='js/slides.min.js'></script>
 
@@ -35,7 +35,7 @@
         <a href="#play_game_cont">玩法简介</a>
       </li>
        <li class="contect">
-        <a href="#contect_cont">联络我门</a>
+        <a href="#contect_cont">联络我们</a>
       </li>
     </ul>
   </section>
@@ -58,7 +58,7 @@
             <a href="#play_game_cont">玩法简介</a>
           </li>
            <li class="contect">
-            <a href="#contect_cont">联络我门</a>
+            <a href="#contect_cont">联络我们</a>
           </li>
         </ul>
      </nav>
@@ -68,7 +68,8 @@
   <div class="wrapper">
     <div class="iphone"></div>
     <div class="download_area">
-      <a href="app_package/BoJiuClub.ipa" class="download_btn">免费下载</a>
+      <a href="app_package/BoJiuClub.ipa" class="download_btn"><img src="images/b9-icon.png" alt="免费下载"></a>
+
       <a href="install_tutor.html" target="_blank"></a>
     </div>
   </div>
@@ -78,22 +79,32 @@
     <section id="feature_cont">
       <h1 >游戏特色</h1>
       <article>
-        <p>博酒俱乐部是一款生动有趣的横向动作游戏。您需要操作一个酒店客人，用不同的技能和道具不断的跃过各种障碍，打破自己的最佳成绩。游戏中酒店客人拥有二次弹跳、翻越及短暂腾空的能力（需要消耗能量），还能使用道具用物品攻击障碍物。</p>
+        <p>博酒俱乐部是一款生动有趣的横向动作游戏。您需要操作一个酒店客人，用不同的技能和道具不断跃过各种障碍，打破自己的最佳成绩。游戏开始后，酒店客人会自动不断地向前奔跑，点击左下角按钮可进行跳跃，闪避障碍物；点击右下角按钮可使用酒瓶，进行攻击；而在空中点击左下角按钮，可以施展腾空跳跃，如果连续点击左下角按钮，还有短暂旋转飞行的能力（需要消耗能量）。玩家必须小心碰到酒店小姐和服务生，会消耗能量值；碰到公安及炸弹，酒店客人脸色会变黑，游戏立即结束。
+        </p>
       </article>
 
     </section>
     <section id="character_cont">
       <h1 >角色介绍</h1>
       <div class="display_actor">
+        <div class="actors">
+          <div id="richer"><h3>富少</h3></div>
+          <div id="gang"><h3>黑道老大</h3></div>
+          <div id="hostess"><h3>酒店公主</h3></div>
+          <div id="waiter"><h3>服务生</h3></div>
+          <div id="dancer"><h3>舞女</h3></div>
+          <div id="police"><h3>公安</h3></div>
+        </div>
+         <div id="large_photo" class="act_richer"></div>
         <div class="detail">
           <dl>
-            <dt id="actor_name">大富豪</dt>
-            <dd id="actor_year">55岁</dd>
-            <dd id="actor_narrate">全球十大企业家之一</dd>
-            <dd id="actor_interest">兴趣 : 并购其他公司</dd>
+            <dt id="actor_name">富少</dt>
+            <dd id="actor_year">25岁</dd>
+            <dd id="actor_narrate">出手阔绰的知名企业少东，在夜生活圈非常知名</dd>
+            <dd id="actor_interest">兴趣 : 自拍</dd>
           </dl>
         </div>
-        <div id="large_photo" class="act_richer"></div>
+       
 <!--         <div class="large_photo gang"></div>
         <div class="detail">
           <dl>
@@ -112,97 +123,93 @@
             <dd>兴趣 : 玩吹牛</dd>
           </dl>
         </div> -->
-        <div class="actors">
-          <div id="richer"></div>
-          <div id="gang"></div>
-          <div id="hostess"></div>
-        </div>
+     
       </div>
     </section>
 
     <section id="play_game_cont">
       <h1 >玩法简介</h1>
       <article>
-        <p>游戏开始后，酒店客人会自动不断地向前奔跑，点击左下角萤幕可进行跳跃，越过障碍物；点击右下角萤幕可使用酒瓶，进行攻击；而在空中点击，可以施展腾空跳跃，如果连续点击，还有短暂旋转飞行的能力（需要消耗能量）。玩家必须小心碰到酒店小姐和服务生，能量值会减少；碰到警察，酒店客人脸色会变黑，游戏立即结束。</p>
+        <p></p>
       </article>
       <div id='teachSlider'>
     <div class='flowContainer'>
         <div>
-                <img src="images/teach/1.jpg">
-                <h3><span>第一步</span>开启手游</h3>
-                <p>
-                  1.系统设定：调整音乐及音效。
-                  2.游戏帮助：介绍本游戏。
-                  3.开始游戏
-                  4.兑换点数：兑换方式。
-                  5.个人资料：可切换玩家身分及观看玩家信息。
-                  6.排行榜：观看排名。
-                </p>
-            </div>
+          <img src="images/teach/1.jpg">
+          <h3>1.开启游戏</h3>
+          <ol class="game_interface">
+            <li>1<span>系统设定：调整音乐及音效。</span></li>
+            <li>2<span>游戏帮助：介绍本游戏。</span></li>
+            <li>3<span>开始游戏。</span></li>
+            <li>4<span>兑换点数：兑换方式。</span></li>
+            <li>5<span>个人资料：可切换玩家身分及观看玩家信息。</span></li>
+            <li>6<span>排行榜：观看排名。</span></li>
+          </ol>
+      </div>
 
             <div>
                 <img src="images/teach/2.jpg">
-                <h3><span>第一步</span>选择角色</h3>
-                <p></p>
+                <h3>2.选择角色</h3>
+                <p>您可以选择要使用富二代、黑道大哥或是酒店红牌做为您的游戏角色</p>
             </div>
 
             <div>
                 <img src="images/teach/3.jpg">
-                <h3><span>第一步</span> 开始游戏</h3>
-                <p></p>
+                <h3>3.开始游戏 </h3>
+                <p>现在，就开始努力地去得分吧!</p>
             </div>
 
             <div>
                 <img src="images/teach/4.jpg">
-                <h3><span>第一步</span> 丢酒瓶</h3>
+                <h3>4.丢酒瓶 </h3>
                 <p>按压右下角按钮可丢酒瓶，击败障碍物（人），如服务员、公安等，避免消耗能量。</p>
             </div>
 
             <div>
                 <img src="images/teach/5.jpg">
-                <h3><span>第一步</span> 跳跃</h3>
+                <h3>5.跳跃 </h3>
                 <p>按压左下角按钮可跳跃，进行得分或闪避障碍物等动作</p>
             </div>
 
             <div>
                 <img src="images/teach/6.jpg">
-                <h3><span>第一步</span> 二段跳跃</h3>
+                <h3>6.二段跳跃 </h3>
                 <p>在空中点击左下角按钮，可以施展腾空跳跃，如果连续点击，还有短暂旋转飞行的能力（需要消耗能量）。</p>
             </div>
 
             <div>
                 <img src="images/teach/7.jpg">
-                <h3><span>第一步</span> 游戏暫停</h3>
+                <h3>7.游戏暫停 </h3>
                 <p>按压左上角暂停按钮，即暂停游戏，可选择重新开始游戏或继续游戏。</p>
             </div>
 
             <div>
                 <img src="images/teach/8.jpg">
-                <h3><span>第一步</span> 能量消耗</h3>
+                <h3>8.能量消耗</h3>
                 <p>碰触障碍物，如服务员、公安、香蕉皮等，均会消耗能量（左上角黄色能量值），能量消耗完毕即无法进行飞行动作。</p>
             </div>
 
             <div>
                 <img src="images/teach/9.jpg">
-                <h3><span>第一步</span> 无敌状态</h3>
-                <p>碰触到无敌神仙液（红圈处），角色周围会有保护罩，碰触任何障碍物在短时间内均不会消耗能量。</p>
+                <h3>9.无敌状态</h3>
+                <p>碰触到无敌药水（红圈处），角色周围会有保护罩，碰触任何障碍物在短时间内均不会消耗能量。</p>
             </div>
 
             <div>
                 <img src="images/teach/10.jpg">
-                <h3><span>第一步</span> 游戏结束</h3>
+                <h3>10.游戏结束</h3>
                 <p>碰触到公安或炸弹，即游戏结束。</p>
             </div>
 
             <div>
                 <img src="images/teach/11.jpg">
-                <h3><span>第一步</span> 送出分数</h3>
+                <h3>11.送出分数</h3>
                 <p>游戏结束后可送出分数，累积分数可换奖品。</p>
             </div>
 
              <div>
-                <img src="images/teach/9.jpg">
-                <h3><span>第一步</span> 加入会员</h3>
+                <img src="images/teach/12.jpg">
+                <h3>12.加入会员 </h3>
                 <p>尚未加入会员请填写数据，以累积分数。</p>
             </div>
         </div>
@@ -210,6 +217,19 @@
         <a href="#" class="btn_backward">prev</a>
         <a href="#" class="btn_forward">next</a>
       </div>
+      <section id="props">
+        <ul>
+          <li ><div class="props-wine_glass"></div><h3>酒杯</h3><p></p></li>
+          <li><div class="props-wine_bottle"></div><h3>酒瓶</h3></li>
+          <li><div class="props-power"></div><h3>无敌药水</h3></li>
+          <li><div class="props-incredible"></div><h3>能量丸</h3></li>
+          <li><div class="props-banana"></div><h3>香蕉皮</h3></li>
+          <li><div class="props-broken_wine_glass"></div><h3>破酒杯</h3></li>
+          <li><div class="props-garbage"></div><h3>垃圾</h3></li>
+          <li><div class="props-broken_wine_bottle"></div><h3>碎酒瓶</h3></li>
+          <li><div class="props-bomb"></div><h3>炸弹</h3></li>
+        </ul>
+      </section>
     </section>
 
      <section id="contect_cont">

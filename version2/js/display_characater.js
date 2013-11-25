@@ -1,4 +1,4 @@
-﻿var animation_index=0;
+﻿var animation_index=1;
 $('#richer,#gang,#hostess').mouseenter(function(e) {
 	change_character(e)
 	$("body").everyTime('90ms','myTimer1',timerFunc,0)
@@ -11,7 +11,6 @@ $('#richer,#gang,#hostess').mouseout(function(e) {
 function timerFunc(){
 	
 	var position="-"+animation_index*320+"px"
-	console.log(position)
 	$("#large_photo").css('background-position','0px '+position);
 	animation_index++
 	if(animation_index>7){
@@ -34,10 +33,10 @@ function change_character(e){
 		case "richer":
 		class_name="act_richer"
 		actor={
-			actorName:"富二代",
+			actorName:"富少",
 			year:"25岁",
-			narrate:"全球十大企业家之一",
-			interest:"兴趣 : 并购其他公司"
+			narrate:"出手阔绰的知名企业少东，在夜生活圈非常知名",
+			interest:"兴趣 : 自拍"
 		}
 		  break;
 		case "gang":
@@ -46,15 +45,15 @@ function change_character(e){
 			actorName:"黑道大哥",
 			year:"40岁",
 			narrate:"盘踞东西南北各方势力的黑道大哥",
-			interest:"兴趣:一打十"
+			interest:"兴趣 : 一打十"
 		}
 		  break;
 		case "hostess":
 		class_name="act_hostess";
 		 actor={
-			actorName:"酒店红牌",
+			actorName:"酒店公主",
 			year:"20岁",
-			narrate:"艳冠群芳的酒店女公关",
+			narrate:"艳冠群芳的酒店女红牌",
 			interest:"兴趣 : 玩吹牛"
 		}
 		break;
@@ -98,7 +97,7 @@ function change_character(e){
     $('.play_game').click(function(){
       var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
       $body.animate({
-        scrollTop:$('#play_game_cont').offset().top
+        scrollTop:$('#play_game_cont').offset().top+20
       }, 700);
       return false;
     });
@@ -148,7 +147,7 @@ $(document).ready(function($) {
   $("#teachSlider").slides({
     preload: true,
     preloadImage: 'images/loading.gif',
-    play: 4500,
+    play: 2500,
     pause: 2500,
     hoverPause: true,
     container: 'flowContainer',
@@ -158,4 +157,12 @@ $(document).ready(function($) {
     pagination: false
   });
 });
-    
+
+// var in_state=false;
+// $('play_game_cont').mouseenter(function(event) {
+//    console.log("123")
+// });
+
+// $('play_game_cont').mouseout(function(event) {
+//   /* Act on the event */
+// });
