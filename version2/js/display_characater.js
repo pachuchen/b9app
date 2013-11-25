@@ -158,11 +158,23 @@ $(document).ready(function($) {
   });
 });
 
-// var in_state=false;
-// $('play_game_cont').mouseenter(function(event) {
-//    console.log("123")
-// });
+ var inside_hand=false;
+ $('#play_game_cont').on('mousemove', function(e) {
+   e.preventDefault();
+   if(inside_hand){
+    $('.slide_hand').offset({top:e.pageY+10,left:e.pageX+10});
+   }else{ 
+    $('.slide_hand').animate({left: e.pageX, top: e.pageY}, 300,function(){
+    inside_hand=true;
+   })
+  }
+   //console.log(e.pageX+"/"+e.pageY)
+ });
 
-// $('play_game_cont').mouseout(function(event) {
-//   /* Act on the event */
-// });
+$('#play_game_cont').on('mouseout', function(e) {
+   event.preventDefault();
+   console.log(e.pageX+"/"+e.pageY);
+   //inside_hand=false;
+   
+    //$('.slide_hand').animate({left: 2000}, 300)
+ });

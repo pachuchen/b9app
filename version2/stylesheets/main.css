@@ -55,38 +55,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-* {
-  outline: 2px dotted red;
-}
-
-* * {
-  outline: 2px dotted green;
-}
-
-* * * {
-  outline: 2px dotted orange;
-}
-
-* * * * {
-  outline: 2px dotted blue;
-}
-
-* * * * * {
-  outline: 1px solid red;
-}
-
-* * * * * * {
-  outline: 1px solid green;
-}
-
-* * * * * * * {
-  outline: 1px solid orange;
-}
-
-* * * * * * * * {
-  outline: 1px solid blue;
-}
-
 .props-sprite, .props-banana, .props-bomb, .props-broken_wine_bottle, .props-broken_wine_glass, .props-garbage, .props-incredible, .props-power, .props-wine_bottle, .props-wine_glass {
   background: url('../images/props-s000a5f1a39.png') no-repeat;
 }
@@ -316,8 +284,8 @@ header nav ul li:hover a {
   clear: both;
 }
 .linespace div {
-  width: 351px;
-  height: 100px;
+  width: 329px;
+  height: 169px;
   border-right: 3px #D86994 solid;
 }
 
@@ -336,11 +304,11 @@ header nav ul li:hover a {
 }
 
 #feature_cont {
-  background: url(../images/content_1.jpg) 159px 0px no-repeat;
+  background: url(../images/content_1.jpg) 137px 0px no-repeat;
 }
 #feature_cont p {
   width: 518px;
-  padding: 47px 0px 74px 385px;
+  padding: 35px 0px 74px 385px;
 }
 
 #character_cont {
@@ -351,7 +319,7 @@ header nav ul li:hover a {
 
 .detail {
   float: left;
-  margin: 16px 0px 0px 718px;
+  margin: 0px 0px 0px 718px;
   width: 242px;
   letter-spacing: 5px;
 }
@@ -394,10 +362,14 @@ header nav ul li:hover a {
   float: left;
   width: 98px;
   height: 98px;
-  margin: 10px;
+  margin: 20px 10px;
 }
 .actors div:hover {
   cursor: pointer;
+}
+.actors div h3 {
+  text-align: center;
+  padding-top: 100px;
 }
 
 #richer {
@@ -461,7 +433,7 @@ header nav ul li:hover a {
   background: url(../images/game_sop.jpg) left top no-repeat;
   width: 620px;
   height: 287px;
-  padding: 15px 0px 0px 76px;
+  padding: 16px 0px 0px 89px;
   margin: 165px 0px 0px 178px;
 }
 #play_game_cont .flowContainer {
@@ -527,7 +499,7 @@ header nav ul li:hover a {
 #props {
   margin: 282px 0px 0px 230px;
   background: url(../images/game_props.jpg) left top no-repeat;
-  padding: 45px 10px 10px 68px;
+  padding: 74px 10px 10px 86px;
 }
 #props ul {
   width: 460px;
@@ -552,6 +524,15 @@ header nav ul li:hover a {
 }
 #props ul li h3 {
   text-align: center;
+}
+
+.slide_hand {
+  background: url(../images/slide_hand.png) left top no-repeat;
+  position: absolute;
+  width: 360px;
+  height: 538px;
+  left: 2000px;
+  z-index: 100;
 }
 
 #contect_cont {

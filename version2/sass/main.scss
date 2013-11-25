@@ -1,7 +1,7 @@
 ﻿@import "compass";
 @import "compass/reset";
 @import "partials/blankwork";
-@import "partials/outline";
+//@import "partials/outline";
 //@import "richer/*.png";
 // @import "gang/*.png";
 // @import "hostess/*.png";
@@ -167,8 +167,8 @@ a{
 .linespace{
 	@include wrapper;
 	div{
-		width: 351px;
-		height: 100px;
+		width: 329px;
+		height: 169px;
 		border-right: 3px #D86994 solid;
 	}
 }
@@ -177,10 +177,10 @@ a{
 }
 
 #feature_cont{
-	background: url(../images/content_1.jpg) 159px 0px no-repeat;
+	background: url(../images/content_1.jpg) 137px 0px no-repeat;
 p{
 	width: 518px;
-	padding: 47px 0px 74px 385px;
+	padding: 35px 0px 74px 385px;
 }
 }
 
@@ -192,7 +192,7 @@ p{
 
 .detail{
 	float: left;
-	margin:16px 0px 0px 718px;
+	margin:0px 0px 0px 718px;
 	width: 242px;
 	letter-spacing: 5px;
 	dt{
@@ -225,15 +225,20 @@ p{
 		float: left;
 		width: 98px;
 		height: 98px;
-		margin: 10px;
+		margin:20px 10px;
 		&:hover{
 			cursor: pointer;
 		}	
+		h3{
+			text-align: center;
+			padding-top: 100px;
+		}
 	}
 }
 
 #richer{
 	background: url(../images/richer_icon.jpg) top center no-repeat;
+	
 	&:hover{
 		background-image: url(../images/richer_icon_hover.jpg);
 	}
@@ -289,7 +294,7 @@ p{
 	    	background: url(../images/game_sop.jpg) left top no-repeat;
             width:620px;
             height:287px;
-            padding: 15px 0px 0px 76px;
+            padding: 16px 0px 0px 89px;
             margin: 165px 0px 0px 178px;
         }
         .flowContainer {
@@ -362,7 +367,7 @@ p{
 #props{
 	margin: 282px 0px 0px 230px;
 	background: url(../images/game_props.jpg) left top no-repeat;
-	padding: 45px 10px 10px 68px;
+	padding: 74px 10px 10px 86px;
 	ul{
 		width: 460px;
 		@include clearfix;
@@ -382,6 +387,14 @@ p{
 		}
 	}
 	
+}
+.slide_hand{
+	background:url(../images/slide_hand.png) left top no-repeat;
+	position: absolute;
+	width: 360px;
+	height: 538px;
+	left: 2000px;
+	z-index: 100;
 }
 
 #contect_cont{
