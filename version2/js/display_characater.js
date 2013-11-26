@@ -1,15 +1,18 @@
 ﻿var animation_index=1;
-$('#richer,#gang,#hostess').mouseenter(function(e) {
+$("body").everyTime('90ms','myTimer1',timerFunc,0)
+$('#richer,#gang,#hostess,#waiter,#dancer,#police').mouseenter(function(e) {
 	change_character(e)
-	$("body").everyTime('90ms','myTimer1',timerFunc,0)
 });
 
-$('#richer,#gang,#hostess').mouseout(function(e) {
-  $('body').stopTime ('myTimer1')
-});
+$('#waiter,#dancer,#police').mouseenter(function(e) {
+  change_character(e)
+  });
+//計時器停止
+// $('#richer,#gang,#hostess').mouseout(function(e) {
+//   $('body').stopTime ('myTimer1')
+// });
 
 function timerFunc(){
-	
 	var position="-"+animation_index*320+"px"
 	$("#large_photo").css('background-position','0px '+position);
 	animation_index++
@@ -18,12 +21,7 @@ function timerFunc(){
 	}
 
 }
-//  $("#gang").mouseenter(function(e) {
-// 	change_character(e)
-// });
-//  $("#hostess").mouseenter(function(e) {
-// 	change_character(e)
-// });
+
 function change_character(e){
 	var n=e.currentTarget.id
 	var class_name
@@ -44,7 +42,7 @@ function change_character(e){
 		  actor={
 			actorName:"黑道大哥",
 			year:"40岁",
-			narrate:"盘踞东西南北各方势力的黑道大哥",
+			narrate:"盘踞东西南北各方势力的狠角色",
 			interest:"兴趣 : 一打十"
 		}
 		  break;
@@ -57,6 +55,36 @@ function change_character(e){
 			interest:"兴趣 : 玩吹牛"
 		}
 		break;
+
+    case "waiter":
+    class_name="act_waiter";
+     actor={
+      actorName:"酒店服务生",
+      year:"19岁",
+      narrate:"为了生活来兼差的打工族",
+      interest:"兴趣 : 一次端三盘"
+    }
+    break;
+
+    case "dancer":
+    class_name="act_dancer";
+     actor={
+      actorName:"酒店舞女",
+      year:"21岁",
+      narrate:"在酒店表演，性感火辣，充满挑逗",
+      interest:"兴趣 : 一字马"
+    }
+    break;
+
+    case "police":
+    class_name="act_police";
+     actor={
+      actorName:"公安",
+      year:"38岁",
+      narrate:"暴躁易怒的执法者",
+      interest:"兴趣 :断水断电"
+    }
+    break;
 	}
 	$("#large_photo").attr('class', class_name);
 
@@ -157,7 +185,7 @@ $(document).ready(function($) {
     pagination: false
   });
 });
-
+/*
  var inside_hand=false;
  $('#play_game_cont').on('mousemove', function(e) {
    e.preventDefault();
@@ -173,8 +201,16 @@ $(document).ready(function($) {
 
 $('#play_game_cont').on('mouseout', function(e) {
    event.preventDefault();
-   console.log(e.pageX+"/"+e.pageY);
-   //inside_hand=false;
-   
-    //$('.slide_hand').animate({left: 2000}, 300)
+   var mouseY=e.pageY;
+   var mouseX=e.pageX
+   var sectionY=$('#play_game_cont').offset().top
+   var sectionX=$('#play_game_cont').offset().left
+   var sectionH=$('#play_game_cont').height()
+   var sectionW=$('#play_game_cont').width()
+   if(mouseY<sectionY||mouseY>sectionY+sectionH||mouseX<sectionX||mouseX>sectionX+sectionW){
+    inside_hand=false;
+    console.log(sectionW)
+    $('.slide_hand').animate({left: 2000}, 300)
+  }
  });
+ */

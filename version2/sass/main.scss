@@ -15,7 +15,7 @@ body{
 	font-size: 15px;
 	line-height: 30px;
 	background-color: #F7F7F7;
-	background: url(../images/body_bg.jpg)-147px top no-repeat;
+	background: url(../images/body_bg.jpg) center top no-repeat;
 }
 a{
 	text-decoration: none;
@@ -31,6 +31,7 @@ a{
 
 h1{
 	@include hide-text;
+	overflow: inherit;
 }
 #logo{
 	img{
@@ -131,14 +132,14 @@ header{
 
 .download_area{
 	display: inline-block;
-width:250px;
+width:180px;
 //height: 166px;
-background: url(../images/download_game.png) top center no-repeat;
-margin-top: 130px;
+//background: url(../images/download_game.png) top center no-repeat;
+margin-top: 178px;
 a{
 	color: #FFF7FF;
-	padding: 0px 69px;
-	margin: 0px 55px;
+	padding-left:193px;
+	//margin: 0px 55px;
 	font-size: 20px;
 	font-weight: bold;
 	background: url(../images/install_tutor.png)top center no-repeat;
@@ -151,10 +152,10 @@ a{
 	//@include hide-text;
 	padding: 0px;
 	display: block;
-	 width:get_width(3);
-	 height: 76px; 
+	 width:  181px;
+	 height: 145px; 
 	 background: url(../images/free_normal.png) top center no-repeat;	
-	 margin: 65px 16px 5px 16px;
+	 //margin: 0px 16px 5px 16px;
 	 img{
 	 	margin: 0px 0px 0px 10px;
 	 }
@@ -167,9 +168,9 @@ a{
 .linespace{
 	@include wrapper;
 	div{
-		width: 329px;
+		width: 301px;
 		height: 169px;
-		border-right: 3px #D86994 solid;
+		border-right: 3px #D2447D solid;
 	}
 }
 .contant{
@@ -177,10 +178,10 @@ a{
 }
 
 #feature_cont{
-	background: url(../images/content_1.jpg) 137px 0px no-repeat;
-p{
-	width: 518px;
-	padding: 35px 0px 74px 385px;
+	background: url(../images/content_1.jpg) 109px 0px no-repeat;
+article{
+	width: 532px;
+	padding: 35px 19px 74px 335px;
 }
 }
 
@@ -212,10 +213,12 @@ p{
 			float: right;
 			background-position: 0px 0px;
 		}
-.act_gang{ background: url(../images/gang.png) no-repeat;}
-.act_hostess{background: url(../images/hostess.png) no-repeat;}
-.act_richer{background: url(../images/richer.png) no-repeat;}
-
+.act_gang{ background: url(../images/gang.jpg) no-repeat;}
+.act_hostess{background: url(../images/hostess.jpg) no-repeat;}
+.act_richer{background: url(../images/richer.jpg) no-repeat;}
+.act_police{background: url(../images/police/police1.png) repeat-y;}
+.act_dancer{background: url(../images/dancer/dancer1.png) repeat-y;}
+.act_waiter{background: url(../images/waiter/waiter1.png) repeat-y;}
 .actors{
 	float: left;
 	margin: 64px 0px 0px 260px;
@@ -404,7 +407,7 @@ p{
 		margin-top: 21px;
 	}
 	ul{
-		list-style:disc  outside;
+		list-style:disc outside;
 		margin: 30px 0px 0px 150px;
 		width: 700px;
 		li{
