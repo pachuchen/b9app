@@ -239,13 +239,15 @@ header nav ul li:hover a {
 }
 
 .download_area {
-  display: inline-block;
-  width: 180px;
-  margin-top: 178px;
+  position: relative;
+  top: 178px;
+  left: 675px;
+  width: 222px;
+  height: 300px;
+  background: url(../images/download_game.png) center top no-repeat;
 }
 .download_area a {
   color: #FFF7FF;
-  padding-left: 193px;
   font-size: 20px;
   font-weight: bold;
   background: url(../images/install_tutor.png) top center no-repeat;
@@ -254,18 +256,20 @@ header nav ul li:hover a {
   background-image: url(../images/install_tutor_hover.png);
   color: #43071E;
 }
-.download_area .download_btn {
-  padding: 0px;
+.download_area .app_store_btn {
+  position: relative;
+  top: 70px;
+  padding-top: 10px;
   display: block;
-  width: 181px;
-  height: 145px;
-  background: url(../images/free_normal.png) top center no-repeat;
+  width: 222px;
+  height: 77px;
+  background: url(../images/app_store.png) top center no-repeat;
 }
-.download_area .download_btn img {
+.download_area .app_store_btn img {
   margin: 0px 0px 0px 10px;
 }
-.download_area .download_btn:hover {
-  background-image: url(../images/free_hover.png);
+.download_area .app_store_btn:hover {
+  background-image: url(../images/app_store_hover.png);
 }
 
 .linespace {

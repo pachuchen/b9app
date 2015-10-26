@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" rel="stylesheet" type="text/css" />
+  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.3.2/jquery.mobile-1.3.2.fix.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="stylesheet/bojoclub.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+  <!-- Export JS  -->
+  <script>
+    $(document).on("gkComponentsReady", function () {
+      /* Powered by http://bxslider.com/ */
+      $(".bxslider").bxSlider();
+    });
+    $(document).on("gkComponentsReady", function () {
+      /* Powered by http://bxslider.com/ */
+      $(".bxslider").bxSlider();
+    });
+
+    $(document).on('pageinit', '#home', function (e) {
+      $('#screen-selector').on('click', function (event) {
+        // Retrieve the 'name' data attribute of the <a/> tag that the user clicked.
+        var name = $(event.target).closest('a').data('name');
+        $('#msg').html(name);
+      });
+    });
+  </script>
+  <title>博酒俱乐部</title>
+</head>
+
+<body>
+  <!-- Page: home  -->
+  <div id="home" data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="c">
+    <div class="logo">
+      <img src="images/logo.png" alt="博酒俱乐部" >
+    </div>  
+    </div>
+    <div data-role="content">
+      <div class="ui-grid-solo" style="height:500px">
+        <div class="ui-block-a" style="height:100%">
+          <div class="ui-grid-a" style="height:280px">
+            <div class="ui-block-a" style="height:100%"></div>
+            <div class="ui-block-b" style="height:100%"></div>
+          </div>
+          <a data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="right" data-corners="false" data-iconshadow="true" href="#feature">
+            <span>游戏特色</span>
+          </a>
+          <a data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="right" data-corners="false" data-iconshadow="true" href="#character">
+            <span>角色介绍</span>
+          </a>
+          <a data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="right" data-corners="false" data-iconshadow="true" href="#play_game">
+            <span>玩法简介</span>
+          </a>
+          <a data-role="button" data-transition="slide" data-icon="arrow-r" data-iconpos="right" data-corners="false" data-iconshadow="true" href="#contect">
+            <span>联络我们</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page: feature  -->
+  <div id="feature" data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="c">
+      <div class="logo">
+      <img src="images/logo.png" alt="博酒俱乐部" >
+    </div>  
+      <a data-role="button" class="ui-btn-left" data-icon="home" href="#home">
+        <span>首頁</span>
+      </a>
+    </div>
+    <div data-role="content">
+      <h1>游戏特色</h1>
+      <article>
+        <p>博酒俱乐部是一款生动有趣的横向动作游戏。您需要操作一个酒店客人，用不同的技能和道具不断跃过各种障碍，打破自己的最佳成绩。</p>
+        <p>游戏开始后，酒店客人会自动不断地向前奔跑，点击左下角按钮可进行跳跃，闪避障碍物；点击右下角按钮可使用酒瓶，进行攻击；而在空中点击左下角按钮，可以施展腾空跳跃，如果连续点击左下角按钮，还有短暂旋转飞行的能力（需要消耗能量）。</p>
+        <p>玩家必须小心碰到酒店小姐和服务生，会消耗能量值；碰到公安及炸弹，酒店客人脸色会变黑，游戏立即结束。</p>
+      </article>
+    </div>
+  </div>
+  <!-- Page: character  -->
+  <div id="character" data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="c">
+      <div class="logo">
+      <img src="images/logo.png" alt="博酒俱乐部" >
+    </div>  
+      <a data-role="button" class="ui-btn-left" data-icon="home" data-transition="slide" href="#home">
+        <span>首頁</span>
+      </a>
+    </div>
+    <div data-role="content">
+      <h1>角色介绍</h1>
+      <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="plus" data-expanded-icon="delete" data-mini="false">
+          <img src="images/richer.png" height="320" width="242">
+          <h3>富少</h3>
+          <h4>25歲</h4>
+          <p>出手阔绰的知名企业少东，在夜生活圈非常知名</p>
+          <p>兴趣 : 自拍</p>
+          
+        </div>
+        <div data-role="collapsible">
+          <img src="images/gang.png" height="320" width="242">
+          <h3>黑道大哥</h3>
+          <h4>40岁</h4>
+          <p>盘踞东西南北各方势力的狠角色</p>
+          <p>兴趣 : 一打十</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/hostess.png" height="320" width="242">
+          <h3>酒店公主</h3>
+          <h4>20岁</h4>
+          <p>艳冠群芳的酒店女红牌</p>
+          <p>兴趣 : 玩吹牛</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/waiter.png" height="320" width="242">
+          <h3>酒店服务生</h3>
+          <h4>19岁</h4>
+          <p>为了生活来兼差的打工族</p>
+          <p>兴趣 : 一次端三盘</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/dancer.png" height="320" width="242">
+          <h3>酒店舞女</h3>
+          <h4>30岁</h4>
+          <p>在酒店表演，以性感火辣，充满挑逗的舞姿著稱</p>
+          <p>兴趣 : 一字马</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/police.png" height="320" width="242">
+          <h3>公安</h3>
+          <h4>38岁</h4>
+          <p>暴躁易怒的执法者</p>
+          <p>兴趣 :断水断电</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page: play_game  -->
+  <div id="play_game" data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="c">
+      <div class="logo">
+      <img src="images/logo.png" alt="博酒俱乐部" >
+    </div>  
+      <a data-role="button" class="ui-btn-left" data-icon="home" data-transition="slide" href="#home">
+        <span>首頁</span>
+      </a>
+    </div>
+    <div data-role="content">
+      <h1>玩法简介</h1>
+      <div data-role="collapsible-set" data-theme="c" data-content-theme="d">
+        <div data-role="collapsible" data-collapsed="true" data-collapsed-icon="plus" data-expanded-icon="delete" data-mini="false">
+          <img src="images/teach/1.jpg"  class="teach_img" alt="">
+          <h3>1.开启游戏</h3>
+          <ol class="game_interface">
+            <li>
+              1<span>系统设定：调整音乐及音效。</span>
+            </li>
+            <li>
+              2<span>游戏帮助：介绍本游戏。</span>
+            </li>
+            <li>
+              3<span>开始游戏。</span>
+            </li>
+            <li>
+              4<span>兑换点数：兑换方式。</span>
+            </li>
+            <li>
+              5<span>个人资料：可切换玩家身分及观看玩家信息。</span>
+            </li>
+            <li>
+              6<span>排行榜：观看排名。</span>
+            </li>
+          </ol>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/2.jpg"  class="teach_img" alt="">
+          <h3>2.选择角色</h3>
+          <p>您可以选择要使用富二代、黑道大哥或是酒店红牌做为您的游戏角色</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/3.jpg"  class="teach_img" width="420" alt="">
+          <h3>3.开始游戏 </h3>
+          <p>现在，就开始努力地去得分吧!</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/4.jpg"  class="teach_img" width="420" alt="">
+          <h3>4.丢酒瓶 </h3>
+          <p>按压右下角按钮可丢酒瓶，击败障碍物（人），如服务员、公安等，避免消耗能量。</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/5.jpg"  class="teach_img" width="420" alt="">
+          <h3>5.跳跃 </h3>
+          <p>按压左下角按钮可跳跃，进行得分或闪避障碍物等动作</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/6.jpg"  class="teach_img" width="420" alt="">
+          <h3>6.二段跳跃 </h3>
+          <p>在空中点击左下角按钮，可以施展腾空跳跃，如果连续点击，还有短暂旋转飞行的能力（需要消耗能量）。</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/7.jpg"  class="teach_img" width="420" alt="">
+          <h3>7.游戏暫停 </h3>
+          <p>按压左上角暂停按钮，即暂停游戏，可选择重新开始游戏或继续游戏。</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/8.jpg"  class="teach_img" width="420" alt="">
+          <h3>8.能量消耗</h3>
+          <p>碰触障碍物，如服务员、公安、香蕉皮等，均会消耗能量（左上角黄色能量值），能量消耗完毕即无法进行飞行动作。</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/9.jpg"  class="teach_img" width="420" alt="">
+          <h3>9.无敌状态</h3>
+          <p>碰触到无敌药水（红圈处），角色周围会有保护罩，碰触任何障碍物在短时间内均不会消耗能量。</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/10.jpg" class="teach_img"  width="420" alt="">
+          <h3>10.游戏结束</h3>
+          <p>碰触到公安或炸弹，即游戏结束。</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/11.jpg" class="teach_img"  width="420" alt="">
+          <h3>11.送出分数</h3>
+          <p>游戏结束后可送出分数，累积分数可换奖品。</p>
+        </div>
+        <div data-role="collapsible">
+          <img src="images/teach/12.jpg" class="teach_img"  width="420" alt="">
+          <h3>12.加入会员 </h3>
+          <p>尚未加入会员请填写数据，以累积分数。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page: contect  -->
+  <div id="contect" data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="c">
+      <div class="logo">
+      <img src="images/logo.png" alt="博酒俱乐部" >
+    </div>  
+      <a data-role="button" class="ui-btn-left" data-icon="home" href="#home" data-transition="slide">
+        <span>首頁</span>
+      </a>
+    </div>
+    <div data-role="content">
+      <h1>联络我们</h1>
+      <a data-role="button" href="http://weixin.qq.com/r/6Uzq8uHEHLxjraWR9xn7" data-corners="false">
+        <span>博酒俱乐部微信公众号</span>
+      </a>
+      <a data-role="button" href="https://guest419.italking.asia/mobile_guest.php?gid=bet9" data-corners="false">
+        <span>联络我门</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

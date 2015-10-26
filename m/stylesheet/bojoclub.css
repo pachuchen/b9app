@@ -1,0 +1,58 @@
+#home,#feature,#character,#play_game,#contect{
+	background: url(../images/mobil_bg.jpg)center top no-repeat;
+	-moz-background-size:auto;        
+-webkit-background-size:auto;        
+-o-background-size:auto;        
+background-size:auto;     
+}
+
+h1{
+	font-weight: bold;
+	color: #F1F1EF;
+}
+
+#feature article{
+	background-color: #E0E1DD;
+	opacity: 0.8;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	-webkit-box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.8);
+	-moz-box-shadow:    3px 3px 10px rgba(50, 50, 50, 0.8);
+	box-shadow:         3px 3px 10px rgba(50, 50, 50, 0.8);
+}
+
+#feature article p{
+	padding:10px 20px;
+	line-height: 30px;
+	text-indent: 1.5em;
+}
+
+#play_game ol li{
+	list-style:none;
+	padding-left: 7px;
+	line-height: 25px;
+}
+
+#play_game li{
+	background: url(../images/no_bg.jpg) left top no-repeat;
+	color: #E8E9E4;
+}
+#play_game li span{
+	color: #21221E;
+	padding-left: 12px;
+}
+.logo{
+	width: 170px;
+	margin: 0 auto;
+}
+
+.teach_img{
+	width: 100%;
+}
+
+.game_interface{
+	padding: 0px 0px 0px 0px;
+}
